@@ -40,3 +40,6 @@ mse:1.4837208986282349, mae:0.7251898050308228
 truck1_Transformer_5G_ftM_sl120_ll60_pl60_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_Exp_0  
 mse:1.3298052549362183, mae:0.6350134611129761
 
+truck1-2_Autoformer_5G_ftM_sl120_ll60_pl60_dm512_nh8_el2_dl1_df2048_fc1_ebtimeF_dtTrue_Exp_0  
+mse:1.2878254652023315, mae:0.6353843808174133
+

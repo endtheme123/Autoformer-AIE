@@ -2,6 +2,8 @@ import os
 import pandas as pd
 from torch.utils.data import Dataset
 from sklearn.preprocessing import StandardScaler
+from sklearn import preprocessing
+# from sklearn.prep
 from utils.timefeatures import time_features
 import warnings
 
@@ -40,7 +42,7 @@ class Dataset_5G_minute(Dataset):
         self.__read_data__()
 
     def __read_data__(self):
-        self.scaler = StandardScaler()
+        self.scaler = preprocessing.SomeScaler(feature_range=(-1,1), center=0)
         df_raw = pd.read_csv(os.path.join(self.root_path,
                                           self.data_path))
         length = len(df_raw)
